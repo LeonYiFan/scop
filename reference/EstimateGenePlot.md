@@ -87,26 +87,26 @@ A \`ggplot\` object.
 ``` r
 data(pancreas_sub)
 pancreas_sub <- RunStandardWorkflow(pancreas_sub)
-#> ℹ [2026-11-02 04:32:41] Start standard processing workflow...
-#> ℹ [2026-11-02 04:32:41] Checking a list of <Seurat>...
-#> ! [2026-11-02 04:32:41] Data 1/1 of the `srt_list` is "unknown"
-#> ℹ [2026-11-02 04:32:41] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
-#> ℹ [2026-11-02 04:32:41] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
-#> ℹ [2026-11-02 04:32:41] Use the separate HVF from `srt_list`
-#> ℹ [2026-11-02 04:32:41] Number of available HVF: 2000
-#> ℹ [2026-11-02 04:32:41] Finished check
-#> ℹ [2026-11-02 04:32:41] Perform `ScaleData()`
-#> ℹ [2026-11-02 04:32:41] Perform pca linear dimension reduction
-#> ℹ [2026-11-02 04:32:42] Use stored estimated dimensions 1:23 for Standardpca
-#> ℹ [2026-11-02 04:32:42] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
-#> ℹ [2026-11-02 04:32:42] Reorder clusters...
-#> ℹ [2026-11-02 04:32:42] Skip `log1p()` because `layer = data` is not "counts"
-#> ℹ [2026-11-02 04:32:42] Perform umap nonlinear dimension reduction
-#> ✔ [2026-11-02 04:32:51] Standard processing workflow completed
+#> ℹ [2026-11-08 22:06:04] Start standard processing workflow...
+#> ℹ [2026-11-08 22:06:04] Checking a list of <Seurat>...
+#> ! [2026-11-08 22:06:04] Data 1/1 of the `srt_list` is "unknown"
+#> ℹ [2026-11-08 22:06:04] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
+#> ℹ [2026-11-08 22:06:05] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
+#> ℹ [2026-11-08 22:06:05] Use the separate HVF from `srt_list`
+#> ℹ [2026-11-08 22:06:05] Number of available HVF: 2000
+#> ℹ [2026-11-08 22:06:05] Finished check
+#> ℹ [2026-11-08 22:06:05] Perform `ScaleData()`
+#> ℹ [2026-11-08 22:06:05] Perform pca linear dimension reduction
+#> ℹ [2026-11-08 22:06:05] Use stored estimated dimensions 1:23 for Standardpca
+#> ℹ [2026-11-08 22:06:06] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
+#> ℹ [2026-11-08 22:06:06] Reorder clusters...
+#> ℹ [2026-11-08 22:06:06] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-08 22:06:06] Perform umap nonlinear dimension reduction
+#> ✔ [2026-11-08 22:06:15] Standard processing workflow completed
 pancreas_sub <- RunESTIMATE(pancreas_sub, group.by = "SubCellType")
-#> ℹ [2026-11-02 04:32:51] ESTIMATE input: 15997 genes x 8 samples
-#> ℹ [2026-11-02 04:32:51] Use 8011 ESTIMATE common genes for scoring
-#> ℹ [2026-11-02 04:32:51] ESTIMATE signature overlap: stromal 79, immune 77
+#> ℹ [2026-11-08 22:06:15] ESTIMATE input: 15997 genes x 8 samples
+#> ℹ [2026-11-08 22:06:15] Use 8011 ESTIMATE common genes for scoring
+#> ℹ [2026-11-08 22:06:15] ESTIMATE signature overlap: stromal 79, immune 77
 EstimateGenePlot(
   pancreas_sub,
   features = c("GCG", "INS"),

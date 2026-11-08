@@ -123,7 +123,7 @@ query <- RunSciBet(
   ref_group = "celltype", nfeatures = 200, verbose = FALSE
 )
 query <- RunStandardWorkflow(query, verbose = FALSE, linear_reduction_dims = 10)
-#> ℹ [2026-11-02 05:15:02] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-08 22:52:56] Skip `log1p()` because `layer = data` is not "counts"
 CellDimPlot(
   query,
   group.by = "scibet_annotation",

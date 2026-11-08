@@ -66,22 +66,22 @@ RecoverCounts(
 ``` r
 data(pancreas_sub)
 pancreas_sub <- RunStandardWorkflow(pancreas_sub)
-#> ℹ [2026-11-02 04:41:44] Start standard processing workflow...
-#> ℹ [2026-11-02 04:41:44] Checking a list of <Seurat>...
-#> ! [2026-11-02 04:41:44] Data 1/1 of the `srt_list` is "unknown"
-#> ℹ [2026-11-02 04:41:44] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
-#> ℹ [2026-11-02 04:41:44] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
-#> ℹ [2026-11-02 04:41:44] Use the separate HVF from `srt_list`
-#> ℹ [2026-11-02 04:41:44] Number of available HVF: 2000
-#> ℹ [2026-11-02 04:41:44] Finished check
-#> ℹ [2026-11-02 04:41:44] Perform `ScaleData()`
-#> ℹ [2026-11-02 04:41:44] Perform pca linear dimension reduction
-#> ℹ [2026-11-02 04:41:44] Use stored estimated dimensions 1:23 for Standardpca
-#> ℹ [2026-11-02 04:41:45] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
-#> ℹ [2026-11-02 04:41:45] Reorder clusters...
-#> ℹ [2026-11-02 04:41:45] Skip `log1p()` because `layer = data` is not "counts"
-#> ℹ [2026-11-02 04:41:45] Perform umap nonlinear dimension reduction
-#> ✔ [2026-11-02 04:41:53] Standard processing workflow completed
+#> ℹ [2026-11-08 22:16:07] Start standard processing workflow...
+#> ℹ [2026-11-08 22:16:07] Checking a list of <Seurat>...
+#> ! [2026-11-08 22:16:07] Data 1/1 of the `srt_list` is "unknown"
+#> ℹ [2026-11-08 22:16:07] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
+#> ℹ [2026-11-08 22:16:07] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
+#> ℹ [2026-11-08 22:16:08] Use the separate HVF from `srt_list`
+#> ℹ [2026-11-08 22:16:08] Number of available HVF: 2000
+#> ℹ [2026-11-08 22:16:08] Finished check
+#> ℹ [2026-11-08 22:16:08] Perform `ScaleData()`
+#> ℹ [2026-11-08 22:16:08] Perform pca linear dimension reduction
+#> ℹ [2026-11-08 22:16:08] Use stored estimated dimensions 1:23 for Standardpca
+#> ℹ [2026-11-08 22:16:09] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
+#> ℹ [2026-11-08 22:16:09] Reorder clusters...
+#> ℹ [2026-11-08 22:16:09] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-08 22:16:09] Perform umap nonlinear dimension reduction
+#> ✔ [2026-11-08 22:16:18] Standard processing workflow completed
 raw_counts <- GetAssayData5(
   pancreas_sub,
   assay = "RNA",
@@ -106,9 +106,9 @@ new_pancreas_sub <- SeuratObject::SetAssayData(
 )
 # Recover the counts and compare with the raw counts matrix
 pancreas_sub <- RecoverCounts(new_pancreas_sub)
-#> ℹ [2026-11-02 04:41:53] Data type is log-normalized
-#> ℹ [2026-11-02 04:41:53] The data is presumed to be log-normalized
-#> ℹ [2026-11-02 04:41:53] Perform "expm1" on the raw data
+#> ℹ [2026-11-08 22:16:18] Data type is log-normalized
+#> ℹ [2026-11-08 22:16:18] The data is presumed to be log-normalized
+#> ℹ [2026-11-08 22:16:18] Perform "expm1" on the raw data
 new_counts <- GetAssayData5(
   pancreas_sub,
   assay = "RNA",

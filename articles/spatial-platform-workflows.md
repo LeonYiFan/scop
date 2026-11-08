@@ -631,7 +631,7 @@ data.frame(
 )
 #>                   package version
 #> scop                 scop   0.9.2
-#> Seurat             Seurat   5.6.0
+#> Seurat             Seurat   6.0.0
 #> SeuratObject SeuratObject   5.4.0
 #> Matrix             Matrix   1.7.6
 ```
@@ -666,7 +666,7 @@ build_receipt <- data.frame(
 )
 build_receipt
 #>                      article               built_utc
-#> 1 spatial-platform-workflows 2026-11-02 05:34:03 UTC
+#> 1 spatial-platform-workflows 2026-11-08 23:13:55 UTC
 #>                            source_revision source_has_local_changes
 #> 1 2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb                    FALSE
 #>                        article_md5     R  scop retained_observations genes

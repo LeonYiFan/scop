@@ -260,7 +260,7 @@ enrich_out <- RunEnrichment(
   TERM2GENE = term2gene,
   minGSSize = 2
 )
-#> ℹ [2026-11-02 04:51:17] Start Enrichment analysis
+#> ℹ [2026-11-08 22:26:50] Start Enrichment analysis
 EnrichmentPlot(
   res = enrich_out,
   db = "custom",

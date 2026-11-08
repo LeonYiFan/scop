@@ -237,22 +237,22 @@ FindExpressedMarkers(
 ``` r
 data(pancreas_sub)
 pancreas_sub <- RunStandardWorkflow(pancreas_sub)
-#> ℹ [2026-11-02 04:36:31] Start standard processing workflow...
-#> ℹ [2026-11-02 04:36:31] Checking a list of <Seurat>...
-#> ! [2026-11-02 04:36:31] Data 1/1 of the `srt_list` is "unknown"
-#> ℹ [2026-11-02 04:36:31] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
-#> ℹ [2026-11-02 04:36:31] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
-#> ℹ [2026-11-02 04:36:31] Use the separate HVF from `srt_list`
-#> ℹ [2026-11-02 04:36:31] Number of available HVF: 2000
-#> ℹ [2026-11-02 04:36:31] Finished check
-#> ℹ [2026-11-02 04:36:31] Perform `ScaleData()`
-#> ℹ [2026-11-02 04:36:32] Perform pca linear dimension reduction
-#> ℹ [2026-11-02 04:36:32] Use stored estimated dimensions 1:23 for Standardpca
-#> ℹ [2026-11-02 04:36:32] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
-#> ℹ [2026-11-02 04:36:32] Reorder clusters...
-#> ℹ [2026-11-02 04:36:32] Skip `log1p()` because `layer = data` is not "counts"
-#> ℹ [2026-11-02 04:36:32] Perform umap nonlinear dimension reduction
-#> ✔ [2026-11-02 04:36:41] Standard processing workflow completed
+#> ℹ [2026-11-08 22:10:20] Start standard processing workflow...
+#> ℹ [2026-11-08 22:10:20] Checking a list of <Seurat>...
+#> ! [2026-11-08 22:10:20] Data 1/1 of the `srt_list` is "unknown"
+#> ℹ [2026-11-08 22:10:20] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
+#> ℹ [2026-11-08 22:10:20] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
+#> ℹ [2026-11-08 22:10:20] Use the separate HVF from `srt_list`
+#> ℹ [2026-11-08 22:10:20] Number of available HVF: 2000
+#> ℹ [2026-11-08 22:10:20] Finished check
+#> ℹ [2026-11-08 22:10:20] Perform `ScaleData()`
+#> ℹ [2026-11-08 22:10:20] Perform pca linear dimension reduction
+#> ℹ [2026-11-08 22:10:21] Use stored estimated dimensions 1:23 for Standardpca
+#> ℹ [2026-11-08 22:10:21] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
+#> ℹ [2026-11-08 22:10:21] Reorder clusters...
+#> ℹ [2026-11-08 22:10:21] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-08 22:10:21] Perform umap nonlinear dimension reduction
+#> ✔ [2026-11-08 22:10:30] Standard processing workflow completed
 markers <- FindExpressedMarkers(
   pancreas_sub,
   cells.1 = SeuratObject::WhichCells(
