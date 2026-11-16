@@ -585,12 +585,12 @@ data.frame(
 )
 #>                            file    bytes
 #> 1               all-markers.csv  5268635
-#> 2                  analysis.rds 50898946
+#> 2                  analysis.rds 50903149
 #> 3             cell-metadata.csv   146525
 #> 4    GO-BP-GSEA-memberships.csv 12612015
 #> 5 GO-BP-measured-background.csv 10159062
 #> 6                 GO-source.txt       41
-#> 7                      GSEA.csv  6702564
+#> 7                      GSEA.csv  6702563
 #> 8                       ORA.csv  3986172
 ```
 
@@ -652,7 +652,7 @@ build_receipt <- data.frame(
 )
 build_receipt
 #>                            article               built_utc  scop     R
-#> 1 differential-enrichment-workflow 2026-11-08 23:08:59 UTC 0.9.2 4.6.2
+#> 1 differential-enrichment-workflow 2026-11-16 00:03:16 UTC 0.9.2 4.6.2
 #>                            source_revision source_has_local_changes
 #> 1 2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb                    FALSE
 #>                        article_md5 R_seed cells_retained genes_in_active_assay
@@ -670,11 +670,11 @@ Show the complete R session used for this page
 sessionInfo()
 #> R version 4.6.2 (2026-10-29)
 #> Platform: x86_64-pc-linux-gnu
-#> Running under: Ubuntu 24.04.5 LTS
+#> Running under: Ubuntu 26.04.1 LTS
 #> 
 #> Matrix products: default
 #> BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
-#> LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0
+#> LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.32.so;  LAPACK version 3.12.0
 #> 
 #> locale:
 #>  [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
@@ -695,19 +695,19 @@ sessionInfo()
 #>   [1] RcppAnnoy_0.0.23        splines_4.6.2           ggplotify_0.1.4        
 #>   [4] tibble_3.3.1            polyclip_1.10-7         enrichit_0.2.7         
 #>   [7] fastDummies_1.7.6       lifecycle_1.0.5         httr2_1.3.0            
-#>  [10] thisplot_0.4.6          doParallel_1.0.17       globals_0.20.0         
+#>  [10] thisplot_0.4.7          doParallel_1.0.17       globals_0.20.0         
 #>  [13] processx_3.9.0          lattice_0.23-1          MASS_7.3-66            
 #>  [16] magrittr_2.0.5          sass_0.4.10             rmarkdown_2.32         
-#>  [19] jquerylib_0.1.4         yaml_2.3.12             thisutils_0.5.3        
-#>  [22] otel_0.3.0              Seurat_6.0.0            ggtangle_0.1.4         
+#>  [19] jquerylib_0.1.4         yaml_2.3.12             thisutils_0.5.4        
+#>  [22] otel_0.3.0              Seurat_6.0.0            ggtangle_0.1.5         
 #>  [25] sctransform_0.4.3       spam_2.11-4             sp_2.2-4               
 #>  [28] cowplot_1.2.0           pbapply_1.7-5           DBI_1.3.0              
 #>  [31] RColorBrewer_1.1-3      Rtsne_0.17              purrr_1.2.2            
 #>  [34] presto_1.1.0            BiocGenerics_0.58.1     yulab.utils_0.2.5      
 #>  [37] tweenr_2.0.3            rappdirs_0.3.4          aisdk_1.4.12           
-#>  [40] gdtools_0.5.2           circlize_0.4.18         IRanges_2.46.0         
+#>  [40] gdtools_0.6.0           circlize_0.4.18         IRanges_2.46.0         
 #>  [43] S4Vectors_0.50.3        enrichplot_1.32.1       ggrepel_0.9.8          
-#>  [46] irlba_2.4.1             listenv_1.1.0           tidytree_0.4.8         
+#>  [46] irlba_2.4.1             listenv_1.1.0           tidytree_0.4.9         
 #>  [49] RSpectra_0.16-2         parallelly_1.50.0       pkgdown_2.2.1          
 #>  [52] codetools_0.2-20        ggforce_0.5.0           DOSE_4.6.0             
 #>  [55] tidyselect_1.2.1        shape_1.4.6.1           aplot_0.3.2            
@@ -746,7 +746,7 @@ sessionInfo()
 #> [154] Biostrings_2.80.2       lazyeval_0.2.3          GOSemSim_2.38.3        
 #> [157] fontquiver_0.2.1        Matrix_1.7-6            RcppHNSW_0.7.0         
 #> [160] patchwork_1.3.2         bit64_4.8.6             future_1.82.0          
-#> [163] ggplot2_4.0.3           KEGGREST_1.52.2         igraph_2.3.4           
+#> [163] ggplot2_4.0.4           KEGGREST_1.52.2         igraph_2.3.4           
 #> [166] memoise_2.0.1           bslib_0.12.0            ggtree_4.2.1           
 #> [169] fastmatch_1.1-8         bit_4.6.0               gson_0.2.2             
 #> [172] ape_5.8-1

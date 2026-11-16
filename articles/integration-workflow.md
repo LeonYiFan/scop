@@ -269,7 +269,7 @@ data.frame(
   bytes = file.info(list.files(output_dir, full.names = TRUE))$size
 )
 #>                file    bytes
-#> 1      analysis.rds 48008781
+#> 1      analysis.rds 48007063
 #> 2 cell-metadata.csv   186170
 ```
 
@@ -327,7 +327,7 @@ build_receipt <- data.frame(
 )
 build_receipt
 #>                article               built_utc  scop     R
-#> 1 integration-workflow 2026-11-08 23:10:27 UTC 0.9.2 4.6.2
+#> 1 integration-workflow 2026-11-16 00:04:22 UTC 0.9.2 4.6.2
 #>                            source_revision source_has_local_changes
 #> 1 2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb                    FALSE
 #>                        article_md5 R_seed cells_retained genes_in_active_assay
@@ -345,11 +345,11 @@ Show the complete R session used for this page
 sessionInfo()
 #> R version 4.6.2 (2026-10-29)
 #> Platform: x86_64-pc-linux-gnu
-#> Running under: Ubuntu 24.04.5 LTS
+#> Running under: Ubuntu 26.04.1 LTS
 #> 
 #> Matrix products: default
 #> BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
-#> LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0
+#> LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.32.so;  LAPACK version 3.12.0
 #> 
 #> locale:
 #>  [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
@@ -378,16 +378,16 @@ sessionInfo()
 #> [25] KernSmooth_2.23-27  Rtsne_0.17          withr_3.0.3        
 #> [28] desc_1.4.3          grid_4.6.2          RcppHNSW_0.7.0     
 #> [31] fastDummies_1.7.6   future_1.82.0       progressr_1.1.0    
-#> [34] ggplot2_4.0.3       globals_0.20.0      scales_1.4.0       
+#> [34] ggplot2_4.0.4       globals_0.20.0      scales_1.4.0       
 #> [37] MASS_7.3-66         ggridges_0.5.7      dichromat_2.0-1    
 #> [40] cli_3.6.6           rmarkdown_2.32      ragg_1.5.2         
-#> [43] thisutils_0.5.3     generics_0.1.4      Seurat_6.0.0       
+#> [43] thisutils_0.5.4     generics_0.1.4      Seurat_6.0.0       
 #> [46] otel_0.3.0          ica_1.0-3           future.apply_1.21.0
 #> [49] RSpectra_0.16-2     sctransform_0.4.3   httr_1.4.9         
 #> [52] reshape2_1.4.5      pbapply_1.7-5       cachem_1.1.0       
 #> [55] stringr_1.6.0       parallel_4.6.2      proxyC_0.6.0       
 #> [58] matrixStats_1.5.0   vctrs_0.7.3         Matrix_1.7-6       
-#> [61] jsonlite_2.0.0      patchwork_1.3.2     thisplot_0.4.6     
+#> [61] jsonlite_2.0.0      patchwork_1.3.2     thisplot_0.4.7     
 #> [64] ggrepel_0.9.8       irlba_2.4.1         scattermore_1.2    
 #> [67] listenv_1.1.0       systemfonts_1.3.2   harmony_2.1.0      
 #> [70] jquerylib_0.1.4     pls_2.9-0           glue_1.8.1         

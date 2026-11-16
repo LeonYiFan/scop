@@ -80,13 +80,13 @@ bench <- RunSpatialBenchmark(
 
 bench$summary
 #>        method      workflow ARI NMI purity runtime_s baseline_memory_mb
-#> 1  BayesSpace SpatialDomain   1   1      1    13.859           290.0977
+#> 1  BayesSpace SpatialDomain   1   1      1     9.921           280.8789
 #> 2      BANKSY SpatialDomain  NA  NA     NA        NA                 NA
-#> 3 SmoothClust SpatialDomain   1   1      1     6.085           289.8984
+#> 3 SmoothClust SpatialDomain   1   1      1     4.616           280.8828
 #>   peak_memory_mb memory_delta_mb n_evaluated n_clusters      status
-#> 1      1088.7773        798.6797          36          3     success
+#> 1      1085.6836        804.8047          36          3     success
 #> 2             NA              NA           0         NA unavailable
-#> 3       967.8906        677.9922          36          3     success
+#> 3       944.3047        663.4219          36          3     success
 #>            error
 #> 1               
 #> 2 Banksy=missing
@@ -111,10 +111,10 @@ str(bench$summary, max.level = 1)
 #>  $ ARI               : num  1 NA 1
 #>  $ NMI               : num  1 NA 1
 #>  $ purity            : num  1 NA 1
-#>  $ runtime_s         : num  13.86 NA 6.08
-#>  $ baseline_memory_mb: num  290 NA 290
-#>  $ peak_memory_mb    : num  1089 NA 968
-#>  $ memory_delta_mb   : num  799 NA 678
+#>  $ runtime_s         : num  9.92 NA 4.62
+#>  $ baseline_memory_mb: num  281 NA 281
+#>  $ peak_memory_mb    : num  1086 NA 944
+#>  $ memory_delta_mb   : num  805 NA 663
 #>  $ n_evaluated       : int  36 0 36
 #>  $ n_clusters        : int  3 NA 3
 #>  $ status            : chr  "success" "unavailable" "success"

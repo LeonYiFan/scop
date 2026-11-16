@@ -67,30 +67,30 @@ A `Seurat` object with doublet class and score columns in `meta.data`.
 ``` r
 data(pancreas_sub)
 pancreas_sub <- RunStandardWorkflow(pancreas_sub)
-#> ℹ [2026-11-08 22:23:15] Start standard processing workflow...
-#> ℹ [2026-11-08 22:23:15] Checking a list of <Seurat>...
-#> ! [2026-11-08 22:23:15] Data 1/1 of the `srt_list` is "unknown"
-#> ℹ [2026-11-08 22:23:16] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
-#> ℹ [2026-11-08 22:23:16] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
-#> ℹ [2026-11-08 22:23:16] Use the separate HVF from `srt_list`
-#> ℹ [2026-11-08 22:23:16] Number of available HVF: 2000
-#> ℹ [2026-11-08 22:23:16] Finished check
-#> ℹ [2026-11-08 22:23:16] Perform `ScaleData()`
-#> ℹ [2026-11-08 22:23:16] Perform pca linear dimension reduction
-#> ℹ [2026-11-08 22:23:16] Use stored estimated dimensions 1:23 for Standardpca
-#> ℹ [2026-11-08 22:23:17] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
-#> ℹ [2026-11-08 22:23:17] Reorder clusters...
-#> ℹ [2026-11-08 22:23:17] Skip `log1p()` because `layer = data` is not "counts"
-#> ℹ [2026-11-08 22:23:17] Perform umap nonlinear dimension reduction
-#> ✔ [2026-11-08 22:23:26] Standard processing workflow completed
+#> ℹ [2026-11-15 23:30:20] Start standard processing workflow...
+#> ℹ [2026-11-15 23:30:20] Checking a list of <Seurat>...
+#> ! [2026-11-15 23:30:20] Data 1/1 of the `srt_list` is "unknown"
+#> ℹ [2026-11-15 23:30:20] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
+#> ℹ [2026-11-15 23:30:20] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
+#> ℹ [2026-11-15 23:30:20] Use the separate HVF from `srt_list`
+#> ℹ [2026-11-15 23:30:20] Number of available HVF: 2000
+#> ℹ [2026-11-15 23:30:20] Finished check
+#> ℹ [2026-11-15 23:30:20] Perform `ScaleData()`
+#> ℹ [2026-11-15 23:30:21] Perform pca linear dimension reduction
+#> ℹ [2026-11-15 23:30:21] Use stored estimated dimensions 1:23 for Standardpca
+#> ℹ [2026-11-15 23:30:21] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
+#> ℹ [2026-11-15 23:30:21] Reorder clusters...
+#> ℹ [2026-11-15 23:30:21] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-15 23:30:21] Perform umap nonlinear dimension reduction
+#> ✔ [2026-11-15 23:30:29] Standard processing workflow completed
 set.seed(11)
 pancreas_sub <- RunDoubletCalling(
   pancreas_sub,
   db_method = "scDblFinder",
   iter = 2L
 )
-#> ℹ [2026-11-08 22:23:27] Data type is raw counts
-#> ℹ [2026-11-08 22:23:27] Running scDblFinder
+#> ℹ [2026-11-15 23:30:30] Data type is raw counts
+#> ℹ [2026-11-15 23:30:30] Running scDblFinder
 table(pancreas_sub$db.scDblFinder_class)
 #> 
 #> singlet doublet 

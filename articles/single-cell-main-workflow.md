@@ -380,7 +380,7 @@ data.frame(
   bytes = file.info(list.files(output_dir, full.names = TRUE))$size
 )
 #>                file    bytes
-#> 1      analysis.rds 34271004
+#> 1      analysis.rds 34271594
 #> 2 cell-metadata.csv   236267
 ```
 
@@ -438,7 +438,7 @@ build_receipt <- data.frame(
 )
 build_receipt
 #>                     article               built_utc  scop     R
-#> 1 single-cell-main-workflow 2026-11-08 23:12:18 UTC 0.9.2 4.6.2
+#> 1 single-cell-main-workflow 2026-11-16 00:05:38 UTC 0.9.2 4.6.2
 #>                            source_revision source_has_local_changes
 #> 1 2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb                    FALSE
 #>                        article_md5 R_seed cells_retained genes_in_active_assay
@@ -456,11 +456,11 @@ Show the complete R session used for this page
 sessionInfo()
 #> R version 4.6.2 (2026-10-29)
 #> Platform: x86_64-pc-linux-gnu
-#> Running under: Ubuntu 24.04.5 LTS
+#> Running under: Ubuntu 26.04.1 LTS
 #> 
 #> Matrix products: default
 #> BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3 
-#> LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so;  LAPACK version 3.12.0
+#> LAPACK: /usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.32.so;  LAPACK version 3.12.0
 #> 
 #> locale:
 #>  [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
@@ -493,7 +493,7 @@ sessionInfo()
 #>  [37] scattermore_1.2       Rcpp_1.1.2            iterators_1.0.14     
 #>  [40] knitr_1.52            future.apply_1.21.0   IRanges_2.46.0       
 #>  [43] sctransform_0.4.3     Matrix_1.7-6          igraph_2.3.4         
-#>  [46] tidyselect_1.2.1      thisplot_0.4.6        dichromat_2.0-1      
+#>  [46] tidyselect_1.2.1      thisplot_0.4.7        dichromat_2.0-1      
 #>  [49] yaml_2.3.12           doParallel_1.0.17     codetools_0.2-20     
 #>  [52] listenv_1.1.0         lattice_0.23-1        tibble_3.3.1         
 #>  [55] plyr_1.8.9            withr_3.0.3           S7_0.2.2             
@@ -501,8 +501,8 @@ sessionInfo()
 #>  [61] fastDummies_1.7.6     desc_1.4.3            circlize_0.4.18      
 #>  [64] pillar_1.11.1         Seurat_6.0.0          KernSmooth_2.23-27   
 #>  [67] stats4_4.6.2          foreach_1.5.2         generics_0.1.4       
-#>  [70] thisutils_0.5.3       RcppHNSW_0.7.0        sp_2.2-4             
-#>  [73] S4Vectors_0.50.3      ggplot2_4.0.3         scales_1.4.0         
+#>  [70] thisutils_0.5.4       RcppHNSW_0.7.0        sp_2.2-4             
+#>  [73] S4Vectors_0.50.3      ggplot2_4.0.4         scales_1.4.0         
 #>  [76] globals_0.20.0        glue_1.8.1            proxyC_0.6.0         
 #>  [79] tools_4.6.2           ggnewscale_0.5.2      RSpectra_0.16-2      
 #>  [82] RANN_2.6.3            fs_2.1.0              dotCall64_1.2        
