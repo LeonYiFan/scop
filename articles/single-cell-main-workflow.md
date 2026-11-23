@@ -380,7 +380,7 @@ data.frame(
   bytes = file.info(list.files(output_dir, full.names = TRUE))$size
 )
 #>                file    bytes
-#> 1      analysis.rds 34271594
+#> 1      analysis.rds 34271635
 #> 2 cell-metadata.csv   236267
 ```
 
@@ -438,7 +438,7 @@ build_receipt <- data.frame(
 )
 build_receipt
 #>                     article               built_utc  scop     R
-#> 1 single-cell-main-workflow 2026-11-16 00:05:38 UTC 0.9.2 4.6.2
+#> 1 single-cell-main-workflow 2026-11-23 00:33:42 UTC 0.9.2 4.6.2
 #>                            source_revision source_has_local_changes
 #> 1 2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb                    FALSE
 #>                        article_md5 R_seed cells_retained genes_in_active_assay
@@ -482,7 +482,7 @@ sessionInfo()
 #>   [4] magrittr_2.0.5        clue_0.3-68           GetoptLong_1.1.1     
 #>   [7] RcppAnnoy_0.0.23      otel_0.3.0            matrixStats_1.5.0    
 #>  [10] ggridges_0.5.7        compiler_4.6.2        png_0.1-9            
-#>  [13] systemfonts_1.3.2     vctrs_0.7.3           reshape2_1.4.5       
+#>  [13] systemfonts_1.3.4     vctrs_0.7.3           reshape2_1.4.5       
 #>  [16] stringr_1.6.0         shape_1.4.6.1         pkgconfig_2.0.3      
 #>  [19] crayon_1.5.3          fastmap_1.2.0         labeling_0.4.3       
 #>  [22] rmarkdown_2.32        ragg_1.5.2            xfun_0.62            
@@ -496,7 +496,7 @@ sessionInfo()
 #>  [46] tidyselect_1.2.1      thisplot_0.4.7        dichromat_2.0-1      
 #>  [49] yaml_2.3.12           doParallel_1.0.17     codetools_0.2-20     
 #>  [52] listenv_1.1.0         lattice_0.23-1        tibble_3.3.1         
-#>  [55] plyr_1.8.9            withr_3.0.3           S7_0.2.2             
+#>  [55] plyr_1.8.9            withr_3.0.3           S7_1.0.0             
 #>  [58] evaluate_1.0.5        Rtsne_0.17            future_1.82.0        
 #>  [61] fastDummies_1.7.6     desc_1.4.3            circlize_0.4.18      
 #>  [64] pillar_1.11.1         Seurat_6.0.0          KernSmooth_2.23-27   
@@ -507,10 +507,10 @@ sessionInfo()
 #>  [79] tools_4.6.2           ggnewscale_0.5.2      RSpectra_0.16-2      
 #>  [82] RANN_2.6.3            fs_2.1.0              dotCall64_1.2        
 #>  [85] cowplot_1.2.0         grid_4.6.2            colorspace_2.1-4     
-#>  [88] patchwork_1.3.2       cli_3.6.6             textshaping_1.0.5    
+#>  [88] patchwork_1.3.2       cli_3.6.6             textshaping_1.1.0    
 #>  [91] spam_2.11-4           ComplexHeatmap_2.28.0 dplyr_1.2.1          
 #>  [94] uwot_0.2.5            gtable_0.3.6          pls_2.9-0            
-#>  [97] sass_0.4.10           digest_0.6.39         BiocGenerics_0.58.1  
+#>  [97] sass_0.5.0            digest_0.6.39         BiocGenerics_0.58.1  
 #> [100] progressr_1.1.0       ggrepel_0.9.8         rjson_0.2.23         
 #> [103] htmlwidgets_1.6.4     SeuratObject_5.4.0    farver_2.1.2         
 #> [106] htmltools_0.5.9       pkgdown_2.2.1         lifecycle_1.0.5      

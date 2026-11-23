@@ -133,8 +133,8 @@ batch scores; the metrics view lists every metric per method.
 bench <- panc8_sub@tools$IntegrationBenchmark
 bench$runs
 #>        method  status error runtime_s         latent              umap
-#> 1 Uncorrected success          11.086 Uncorrectedpca UncorrectedUMAP2D
-#> 2     Harmony success           7.952        Harmony     HarmonyUMAP2D
+#> 1 Uncorrected success          13.060 Uncorrectedpca UncorrectedUMAP2D
+#> 2     Harmony success           9.522        Harmony     HarmonyUMAP2D
 stopifnot(all(bench$runs$status == "success"))
 
 thisplot::print_colored_table(
@@ -143,8 +143,8 @@ thisplot::print_colored_table(
   palette = "Chinese"
 )
 #> method       status   overall    bio        batch      iLISI       cLISI      celltype_ASW  batch_ASW_mixing  celltype_graph_connectivity  celltype_ARI  celltype_NMI  runtime_s  latent          umap             
-#> Uncorrected  success  0.6710946  0.7850261  0.5001973  0.05972029  0.9906632  0.6055287     0.9406743         0.9464146                    0.4704063     0.7371439     11.086     Uncorrectedpca  UncorrectedUMAP2D
-#> Harmony      success  0.7796145  0.8679485  0.6471136  0.37231385  0.9939489  0.6688807     0.9219134         0.9457216                    0.7640205     0.8676191     7.952      Harmony         HarmonyUMAP2D    
+#> Uncorrected  success  0.6710946  0.7850261  0.5001973  0.05972029  0.9906632  0.6055287     0.9406743         0.9464146                    0.4704063     0.7371439     13.060     Uncorrectedpca  UncorrectedUMAP2D
+#> Harmony      success  0.7796145  0.8679485  0.6471136  0.37231385  0.9939489  0.6688807     0.9219134         0.9457216                    0.7640205     0.8676191     9.522      Harmony         HarmonyUMAP2D    
 
 metrics <- bench$metrics
 metrics <- metrics[
@@ -275,10 +275,10 @@ data.frame(
   bytes = file.info(list.files(output_dir, full.names = TRUE))$size
 )
 #>                    file    bytes
-#> 1          analysis.rds 47325340
+#> 1          analysis.rds 47325507
 #> 2 benchmark-metrics.csv     1598
-#> 3    benchmark-runs.csv      180
-#> 4 benchmark-summary.csv      657
+#> 3    benchmark-runs.csv      179
+#> 4 benchmark-summary.csv      656
 #> 5     cell-metadata.csv   274967
 ```
 
@@ -336,7 +336,7 @@ build_receipt <- data.frame(
 )
 build_receipt
 #>                          article               built_utc  scop     R
-#> 1 integration-benchmark-workflow 2026-11-16 00:03:52 UTC 0.9.2 4.6.2
+#> 1 integration-benchmark-workflow 2026-11-23 00:31:26 UTC 0.9.2 4.6.2
 #>                            source_revision source_has_local_changes
 #> 1 2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb                    FALSE
 #>                        article_md5 R_seed cells_retained genes_in_active_assay
@@ -377,10 +377,10 @@ sessionInfo()
 #> 
 #> loaded via a namespace (and not attached):
 #>  [1] tidyselect_1.2.1    dplyr_1.2.1         farver_2.1.2       
-#>  [4] S7_0.2.2            fastmap_1.2.0       RANN_2.6.3         
+#>  [4] S7_1.0.0            fastmap_1.2.0       RANN_2.6.3         
 #>  [7] digest_0.6.39       dotCall64_1.2       lifecycle_1.0.5    
 #> [10] cluster_2.1.8.3     SeuratObject_5.4.0  magrittr_2.0.5     
-#> [13] compiler_4.6.2      rlang_1.3.0         sass_0.4.10        
+#> [13] compiler_4.6.2      rlang_1.3.0         sass_0.5.0         
 #> [16] tools_4.6.2         igraph_2.3.4        yaml_2.3.12        
 #> [19] knitr_1.52          labeling_0.4.3      htmlwidgets_1.6.4  
 #> [22] sp_2.2-4            plyr_1.8.9          RColorBrewer_1.1-3 
@@ -398,13 +398,13 @@ sessionInfo()
 #> [58] matrixStats_1.5.0   vctrs_0.7.3         Matrix_1.7-6       
 #> [61] jsonlite_2.0.0      BiocNeighbors_2.6.0 patchwork_1.3.2    
 #> [64] thisplot_0.4.7      ggrepel_0.9.8       irlba_2.4.1        
-#> [67] scattermore_1.2     listenv_1.1.0       systemfonts_1.3.2  
+#> [67] scattermore_1.2     listenv_1.1.0       systemfonts_1.3.4  
 #> [70] harmony_2.1.0       jquerylib_0.1.4     pls_2.9-0          
 #> [73] glue_1.8.1          parallelly_1.50.0   spam_2.11-4        
 #> [76] pkgdown_2.2.1       codetools_0.2-20    uwot_0.2.5         
 #> [79] cowplot_1.2.0       stringi_1.8.9       RcppAnnoy_0.0.23   
 #> [82] gtable_0.3.6        tibble_3.3.1        pillar_1.11.1      
-#> [85] htmltools_0.5.9     R6_2.6.1            textshaping_1.0.5  
+#> [85] htmltools_0.5.9     R6_2.6.1            textshaping_1.1.0  
 #> [88] evaluate_1.0.5      lattice_0.23-1      png_0.1-9          
 #> [91] RhpcBLASctl_0.23-42 bslib_0.12.0        Rcpp_1.1.2         
 #> [94] gridExtra_2.3.1     xfun_0.62           fs_2.1.0           

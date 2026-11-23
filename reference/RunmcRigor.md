@@ -154,16 +154,16 @@ pancreas_sub <- RunStandardWorkflow(
   nonlinear_reduction_dims = 2,
   verbose = FALSE
 )
-#> ℹ [2026-11-15 23:56:17] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-23 00:22:03] Skip `log1p()` because `layer = data` is not "counts"
 mc <- RunMetaCell(
   pancreas_sub,
   method = "supercell",
   gamma = 25
 )
-#> ℹ [2026-11-15 23:56:26] Running SuperCell with gamma = 25, k.knn = 5 on 1000 cells
-#> ℹ [2026-11-15 23:56:27] `RunMetaCell()` ("supercell") built 40 metacells from 1000 cells
-#> ℹ [2026-11-15 23:56:27] Metacell size summary: min 5, median 20, mean 25, max 74 cells
-#> ✔ [2026-11-15 23:56:27] `RunMetaCell()` returned metacell Seurat with 40 metacells. Original cells in `@misc[["original_srt"]]`
+#> ℹ [2026-11-23 00:22:13] Running SuperCell with gamma = 25, k.knn = 5 on 1000 cells
+#> ℹ [2026-11-23 00:22:14] `RunMetaCell()` ("supercell") built 40 metacells from 1000 cells
+#> ℹ [2026-11-23 00:22:14] Metacell size summary: min 5, median 20, mean 25, max 74 cells
+#> ✔ [2026-11-23 00:22:14] `RunMetaCell()` returned metacell Seurat with 40 metacells. Original cells in `@misc[["original_srt"]]`
 
 membership <- data.frame(
   Metacell = mc@misc[["cell_membership"]],
@@ -177,7 +177,7 @@ pancreas_sub <- RunmcRigor(
   feature_use = 100,
   draw = FALSE
 )
-#> ℹ [2026-11-15 23:56:27] Run mcRigor in "detect" mode with 1 partition
+#> ℹ [2026-11-23 00:22:14] Run mcRigor in "detect" mode with 1 partition
 #> Normalizing data...
 #> gamma = 1 
 #> 
@@ -266,7 +266,7 @@ pancreas_sub <- RunmcRigor(
 #> 
 #>     dubious trustworthy 
 #>          27          13 
-#> ✔ [2026-11-15 23:56:28] mcRigor results stored in `srt@tools[[mcRigor]]`
+#> ✔ [2026-11-23 00:22:16] mcRigor results stored in `srt@tools[[mcRigor]]`
 
 table(pancreas_sub$mcRigor_status)
 #> 

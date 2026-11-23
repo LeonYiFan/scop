@@ -286,7 +286,7 @@ components when \`combine = FALSE\`.
 ``` r
 data(pancreas_sub)
 pancreas_sub <- RunStandardWorkflow(pancreas_sub, verbose = FALSE)
-#> ℹ [2026-11-15 23:11:56] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-22 23:26:45] Skip `log1p()` because `layer = data` is not "counts"
 reduction <- DefaultReduction(pancreas_sub)
 SeuratObject::Key(pancreas_sub[[reduction]]) <- "UMAP_"
 genesets <- list(
@@ -300,17 +300,17 @@ pancreas_sub <- CellScoring(
   method = "AUCell",
   classification = FALSE
 )
-#> ℹ [2026-11-15 23:12:02] Start cell scoring
-#> ℹ [2026-11-15 23:12:03] Data type is log-normalized
-#> ℹ [2026-11-15 23:12:03] Number of feature lists to be scored: 3
-#> ✔ [2026-11-15 23:12:03] Cell scoring completed
+#> ℹ [2026-11-22 23:26:52] Start cell scoring
+#> ℹ [2026-11-22 23:26:52] Data type is log-normalized
+#> ℹ [2026-11-22 23:26:53] Number of feature lists to be scored: 3
+#> ✔ [2026-11-22 23:26:53] Cell scoring completed
 CellScoringPlot(
   pancreas_sub,
   method = "AUCell",
   group.by = "SubCellType"
 )
-#> ℹ [2026-11-15 23:12:03] Using the latest AUCell result recorded by `CellScoring()`
-#> ℹ [2026-11-15 23:12:04] Plotting AUCell feature "Alpha"
-#> ℹ [2026-11-15 23:12:04] Plotting AUCell feature "Beta"
-#> ℹ [2026-11-15 23:12:04] Plotting AUCell feature "Ductal"
+#> ℹ [2026-11-22 23:26:53] Using the latest AUCell result recorded by `CellScoring()`
+#> ℹ [2026-11-22 23:26:54] Plotting AUCell feature "Alpha"
+#> ℹ [2026-11-22 23:26:54] Plotting AUCell feature "Beta"
+#> ℹ [2026-11-22 23:26:54] Plotting AUCell feature "Ductal"
 ```

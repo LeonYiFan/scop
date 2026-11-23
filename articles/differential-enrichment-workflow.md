@@ -585,7 +585,7 @@ data.frame(
 )
 #>                            file    bytes
 #> 1               all-markers.csv  5268635
-#> 2                  analysis.rds 50903149
+#> 2                  analysis.rds 50902421
 #> 3             cell-metadata.csv   146525
 #> 4    GO-BP-GSEA-memberships.csv 12612015
 #> 5 GO-BP-measured-background.csv 10159062
@@ -652,7 +652,7 @@ build_receipt <- data.frame(
 )
 build_receipt
 #>                            article               built_utc  scop     R
-#> 1 differential-enrichment-workflow 2026-11-16 00:03:16 UTC 0.9.2 4.6.2
+#> 1 differential-enrichment-workflow 2026-11-23 00:30:41 UTC 0.9.2 4.6.2
 #>                            source_revision source_has_local_changes
 #> 1 2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb                    FALSE
 #>                        article_md5 R_seed cells_retained genes_in_active_assay
@@ -696,8 +696,8 @@ sessionInfo()
 #>   [4] tibble_3.3.1            polyclip_1.10-7         enrichit_0.2.7         
 #>   [7] fastDummies_1.7.6       lifecycle_1.0.5         httr2_1.3.0            
 #>  [10] thisplot_0.4.7          doParallel_1.0.17       globals_0.20.0         
-#>  [13] processx_3.9.0          lattice_0.23-1          MASS_7.3-66            
-#>  [16] magrittr_2.0.5          sass_0.4.10             rmarkdown_2.32         
+#>  [13] processx_3.10.0         lattice_0.23-1          MASS_7.3-66            
+#>  [16] magrittr_2.0.5          sass_0.5.0              rmarkdown_2.32         
 #>  [19] jquerylib_0.1.4         yaml_2.3.12             thisutils_0.5.4        
 #>  [22] otel_0.3.0              Seurat_6.0.0            ggtangle_0.1.5         
 #>  [25] sctransform_0.4.3       spam_2.11-4             sp_2.2-4               
@@ -714,20 +714,20 @@ sessionInfo()
 #>  [58] farver_2.1.2            matrixStats_1.5.0       stats4_4.6.2           
 #>  [61] Seqinfo_1.2.0           jsonlite_2.0.0          GetoptLong_1.1.1       
 #>  [64] progressr_1.1.0         ggridges_0.5.7          iterators_1.0.14       
-#>  [67] systemfonts_1.3.2       foreach_1.5.2           tools_4.6.2            
+#>  [67] systemfonts_1.3.4       foreach_1.5.2           tools_4.6.2            
 #>  [70] ggnewscale_0.5.2        treeio_1.36.1           ragg_1.5.2             
 #>  [73] ica_1.0-3               Rcpp_1.1.2              glue_1.8.1             
 #>  [76] gridExtra_2.3.1         geomtextpath_0.2.0      xfun_0.62              
 #>  [79] qvalue_2.44.0           dplyr_1.2.1             withr_3.0.3            
 #>  [82] fastmap_1.2.0           callr_3.8.0             digest_0.6.39          
-#>  [85] R6_2.6.1                gridGraphics_0.5-1      textshaping_1.0.5      
+#>  [85] R6_2.6.1                gridGraphics_0.5-1      textshaping_1.1.0      
 #>  [88] colorspace_2.1-4        scattermore_1.2         GO.db_3.23.1           
 #>  [91] Cairo_1.7-0             dichromat_2.0-1         RSQLite_3.53.3         
 #>  [94] tidyr_1.3.2             generics_0.1.4          pls_2.9-0              
 #>  [97] fontLiberation_0.1.0    data.table_1.18.6.1     httr_1.4.9             
 #> [100] htmlwidgets_1.6.4       scatterpie_0.2.6        org.Mm.eg.db_3.23.0    
 #> [103] uwot_0.2.5              pkgconfig_2.0.3         gtable_0.3.6           
-#> [106] blob_1.3.0              ComplexHeatmap_2.28.0   S7_0.2.2               
+#> [106] blob_1.3.0              ComplexHeatmap_2.28.0   S7_1.0.0               
 #> [109] XVector_0.52.0          clusterProfiler_4.20.3  shadowtext_0.1.6       
 #> [112] htmltools_0.5.9         fontBitstreamVera_0.1.1 fgsea_1.38.0           
 #> [115] dotCall64_1.2           clue_0.3-68             SeuratObject_5.4.0     

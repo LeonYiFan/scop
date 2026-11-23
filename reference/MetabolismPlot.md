@@ -59,22 +59,22 @@ MetabolismPlot(
 ``` r
 data(pancreas_sub)
 pancreas_sub <- RunStandardWorkflow(pancreas_sub)
-#> ℹ [2026-11-15 23:23:14] Start standard processing workflow...
-#> ℹ [2026-11-15 23:23:14] Checking a list of <Seurat>...
-#> ! [2026-11-15 23:23:14] Data 1/1 of the `srt_list` is "unknown"
-#> ℹ [2026-11-15 23:23:14] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
-#> ℹ [2026-11-15 23:23:14] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
-#> ℹ [2026-11-15 23:23:14] Use the separate HVF from `srt_list`
-#> ℹ [2026-11-15 23:23:14] Number of available HVF: 2000
-#> ℹ [2026-11-15 23:23:14] Finished check
-#> ℹ [2026-11-15 23:23:14] Perform `ScaleData()`
-#> ℹ [2026-11-15 23:23:14] Perform pca linear dimension reduction
-#> ℹ [2026-11-15 23:23:14] Use stored estimated dimensions 1:23 for Standardpca
-#> ℹ [2026-11-15 23:23:15] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
-#> ℹ [2026-11-15 23:23:15] Reorder clusters...
-#> ℹ [2026-11-15 23:23:15] Skip `log1p()` because `layer = data` is not "counts"
-#> ℹ [2026-11-15 23:23:15] Perform umap nonlinear dimension reduction
-#> ✔ [2026-11-15 23:23:22] Standard processing workflow completed
+#> ℹ [2026-11-22 23:42:05] Start standard processing workflow...
+#> ℹ [2026-11-22 23:42:05] Checking a list of <Seurat>...
+#> ! [2026-11-22 23:42:05] Data 1/1 of the `srt_list` is "unknown"
+#> ℹ [2026-11-22 23:42:05] Perform `NormalizeData()` with `normalization.method = 'LogNormalize'` on 1/1 of `srt_list`...
+#> ℹ [2026-11-22 23:42:05] Perform `FindVariableFeatures()` on 1/1 of `srt_list`...
+#> ℹ [2026-11-22 23:42:05] Use the separate HVF from `srt_list`
+#> ℹ [2026-11-22 23:42:05] Number of available HVF: 2000
+#> ℹ [2026-11-22 23:42:05] Finished check
+#> ℹ [2026-11-22 23:42:05] Perform `ScaleData()`
+#> ℹ [2026-11-22 23:42:05] Perform pca linear dimension reduction
+#> ℹ [2026-11-22 23:42:06] Use stored estimated dimensions 1:23 for Standardpca
+#> ℹ [2026-11-22 23:42:06] Perform `Seurat::FindClusters()` with `cluster_algorithm = 'louvain'` and `cluster_resolution = 0.6`
+#> ℹ [2026-11-22 23:42:06] Reorder clusters...
+#> ℹ [2026-11-22 23:42:06] Skip `log1p()` because `layer = data` is not "counts"
+#> ℹ [2026-11-22 23:42:06] Perform umap nonlinear dimension reduction
+#> ✔ [2026-11-22 23:42:14] Standard processing workflow completed
 pancreas_sub <- RunMetabolism(
   pancreas_sub,
   db = c("KEGG", "REACTOME"),
@@ -84,28 +84,28 @@ pancreas_sub <- RunMetabolism(
   method = "AUCell",
   use_preparedb = FALSE
 )
-#> ℹ [2026-11-15 23:23:22] Start metabolism pathway scoring
-#> ℹ [2026-11-15 23:23:22] Data type is raw counts
-#> ℹ [2026-11-15 23:23:22] Averaging expression by "CellType" ...
-#> ℹ [2026-11-15 23:23:22] Aggregated expression: 15998 genes x 5 groups
-#> ℹ [2026-11-15 23:23:22] Using raw scMetabolism gene sets with species conversion to "Mus_musculus"
-#> ℹ [2026-11-15 23:23:23] Converting 3297 human gene symbols to "Mus_musculus" via biomaRt ...
-#> ℹ [2026-11-15 23:23:23] Connect to the Ensembl archives...
-#> ℹ [2026-11-15 23:23:23] Using the 115 version of ensembl database...
-#> ℹ [2026-11-15 23:23:23] Downloading the ensembl database from https://sep2025.archive.ensembl.org...
-#> ℹ [2026-11-15 23:23:23] Searching the dataset hsapiens ...
-#> ℹ [2026-11-15 23:23:24] Connecting to the dataset hsapiens_gene_ensembl ...
-#> ℹ [2026-11-15 23:23:24] Converting the geneIDs...
-#> ℹ [2026-11-15 23:23:27] 3256 genes mapped with "ensembl_symbol"
-#> ℹ [2026-11-15 23:23:28] 13 genes mapped with "entrez_symbol"
-#> ℹ [2026-11-15 23:23:29] 6 genes mapped with "uniprot_symbol"
-#> ℹ [2026-11-15 23:23:29] ==============================
+#> ℹ [2026-11-22 23:42:14] Start metabolism pathway scoring
+#> ℹ [2026-11-22 23:42:15] Data type is raw counts
+#> ℹ [2026-11-22 23:42:15] Averaging expression by "CellType" ...
+#> ℹ [2026-11-22 23:42:15] Aggregated expression: 15998 genes x 5 groups
+#> ℹ [2026-11-22 23:42:15] Using raw scMetabolism gene sets with species conversion to "Mus_musculus"
+#> ℹ [2026-11-22 23:42:15] Converting 3297 human gene symbols to "Mus_musculus" via biomaRt ...
+#> ℹ [2026-11-22 23:42:15] Connect to the Ensembl archives...
+#> ℹ [2026-11-22 23:42:16] Using the 115 version of ensembl database...
+#> ℹ [2026-11-22 23:42:16] Downloading the ensembl database from https://sep2025.archive.ensembl.org...
+#> ℹ [2026-11-22 23:42:16] Searching the dataset hsapiens ...
+#> ℹ [2026-11-22 23:42:16] Connecting to the dataset hsapiens_gene_ensembl ...
+#> ℹ [2026-11-22 23:42:17] Converting the geneIDs...
+#> ℹ [2026-11-22 23:42:20] 3256 genes mapped with "ensembl_symbol"
+#> ℹ [2026-11-22 23:42:22] 13 genes mapped with "entrez_symbol"
+#> ℹ [2026-11-22 23:42:23] 6 genes mapped with "uniprot_symbol"
+#> ℹ [2026-11-22 23:42:24] ==============================
 #> ℹ                       3275 genes mapped
 #> ℹ                       22 genes unmapped
 #> ℹ                       ==============================
-#> ✔ [2026-11-15 23:23:30] Species conversion added 207 gene matches across pathways
-#> ℹ [2026-11-15 23:23:30] Total metabolism gene sets to score: 127
-#> ✔ [2026-11-15 23:23:30] Metabolism scores stored in tools slot "Metabolism_CellType_AUCell"
+#> ✔ [2026-11-22 23:42:25] Species conversion added 207 gene matches across pathways
+#> ℹ [2026-11-22 23:42:25] Total metabolism gene sets to score: 127
+#> ✔ [2026-11-22 23:42:25] Metabolism scores stored in tools slot "Metabolism_CellType_AUCell"
 
 ht1 <- MetabolismPlot(
   pancreas_sub,
@@ -159,7 +159,7 @@ MetabolismPlot(
   plot_type = "network",
   topTerm = 3
 )
-#> ✔ [2026-11-15 23:23:32] shadowtext installed successfully
+#> ✔ [2026-11-22 23:42:28] shadowtext installed successfully
 
 
 MetabolismPlot(
@@ -188,27 +188,27 @@ pancreas_sub <- RunMetabolism(
   Ensembl_version = 115,
   use_preparedb = FALSE
 )
-#> ℹ [2026-11-15 23:23:35] Start metabolism pathway scoring
-#> ℹ [2026-11-15 23:23:35] Data type is raw counts
-#> ℹ [2026-11-15 23:23:35] Using raw scMetabolism gene sets with species conversion to "Mus_musculus"
-#> ℹ [2026-11-15 23:23:35] Converting 3297 human gene symbols to "Mus_musculus" via biomaRt ...
-#> ℹ [2026-11-15 23:23:35] Connect to the Ensembl archives...
-#> ℹ [2026-11-15 23:23:35] Using the 115 version of ensembl database...
-#> ℹ [2026-11-15 23:23:35] Downloading the ensembl database from https://sep2025.archive.ensembl.org...
-#> ℹ [2026-11-15 23:23:35] Searching the dataset hsapiens ...
-#> ℹ [2026-11-15 23:23:35] Connecting to the dataset hsapiens_gene_ensembl ...
-#> ℹ [2026-11-15 23:23:36] Converting the geneIDs...
-#> ℹ [2026-11-15 23:23:36] 3256 genes mapped with "ensembl_symbol"
-#> ℹ [2026-11-15 23:23:36] 13 genes mapped with "entrez_symbol"
-#> ℹ [2026-11-15 23:23:37] 6 genes mapped with "uniprot_symbol"
-#> ℹ [2026-11-15 23:23:37] ==============================
+#> ℹ [2026-11-22 23:42:32] Start metabolism pathway scoring
+#> ℹ [2026-11-22 23:42:32] Data type is raw counts
+#> ℹ [2026-11-22 23:42:32] Using raw scMetabolism gene sets with species conversion to "Mus_musculus"
+#> ℹ [2026-11-22 23:42:32] Converting 3297 human gene symbols to "Mus_musculus" via biomaRt ...
+#> ℹ [2026-11-22 23:42:32] Connect to the Ensembl archives...
+#> ℹ [2026-11-22 23:42:33] Using the 115 version of ensembl database...
+#> ℹ [2026-11-22 23:42:33] Downloading the ensembl database from https://sep2025.archive.ensembl.org...
+#> ℹ [2026-11-22 23:42:33] Searching the dataset hsapiens ...
+#> ℹ [2026-11-22 23:42:33] Connecting to the dataset hsapiens_gene_ensembl ...
+#> ℹ [2026-11-22 23:42:33] Converting the geneIDs...
+#> ℹ [2026-11-22 23:42:34] 3256 genes mapped with "ensembl_symbol"
+#> ℹ [2026-11-22 23:42:34] 13 genes mapped with "entrez_symbol"
+#> ℹ [2026-11-22 23:42:35] 6 genes mapped with "uniprot_symbol"
+#> ℹ [2026-11-22 23:42:36] ==============================
 #> ℹ                       3275 genes mapped
 #> ℹ                       22 genes unmapped
 #> ℹ                       ==============================
-#> ✔ [2026-11-15 23:23:37] Species conversion added 207 gene matches across pathways
-#> ℹ [2026-11-15 23:23:37] Total metabolism gene sets to score: 127
-#> ✔ [2026-11-15 23:23:38] Metabolism scores stored in tools slot "Metabolism_AUCell"
-#> ℹ [2026-11-15 23:23:38] Metabolism scores also stored in assay "METABOLISM"
+#> ✔ [2026-11-22 23:42:37] Species conversion added 207 gene matches across pathways
+#> ℹ [2026-11-22 23:42:37] Total metabolism gene sets to score: 127
+#> ✔ [2026-11-22 23:42:37] Metabolism scores stored in tools slot "Metabolism_AUCell"
+#> ℹ [2026-11-22 23:42:37] Metabolism scores also stored in assay "METABOLISM"
 
 FeatureDimPlot(
   pancreas_sub,
@@ -235,5 +235,5 @@ ht <- GroupHeatmap(
   width = 1,
   height = 2
 )
-#> ! [2026-11-15 23:23:38] The values in the "counts" layer are non-integer. Set the library size to "1"
+#> ! [2026-11-22 23:42:38] The values in the "counts" layer are non-integer. Set the library size to "1"
 ```
